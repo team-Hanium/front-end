@@ -51,6 +51,6 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    //리퀘 클래스 생성
+    //리퀘 클래스 생
 
 }
