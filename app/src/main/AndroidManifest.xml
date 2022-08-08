@@ -11,11 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hello">
-        <activity android:name=".Home.Arround.ArroundActivity"></activity>
+        <activity
+            android:name=".Home.MainActivity"
+            android:exported="false" />
+        <activity android:name=".Home.Arround.ArroundActivity" />
         <activity android:name=".Home.Route.RouteActivity" />
         <activity android:name=".login_register.LoginActivity" />
         <activity android:name=".login_register.RegisterActivity" />
-        <activity android:name=".Home.MainActivity"
+        <activity
+            android:name=".Home.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
