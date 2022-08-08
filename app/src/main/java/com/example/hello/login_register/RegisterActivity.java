@@ -20,10 +20,10 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         id = findViewById(R.id.editText);
-        pw = findViewById(R.id.editText2);
+        pw = findViewById(R.id.editText_pw);
         check_pw = findViewById(R.id.editText3);
         email= findViewById(R.id.editText4);
-        btn = findViewById(R.id.button);
+        btn = findViewById(R.id.button_login);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,8 +46,11 @@ public class RegisterActivity extends AppCompatActivity {
                     dialog.show();
                 }
 
-
+                //리퀘 클래스
             }
         });
     }
+
+    //리퀘 클래스 생성
+
 }
