@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hello">
+        <activity android:name=".Home.Favorites.FavoriteActivity"></activity>
+        <activity android:name=".Home.LocationShare.LocationActivity" />
         <activity
             android:name=".Home.MainActivity"
             android:exported="false" />
