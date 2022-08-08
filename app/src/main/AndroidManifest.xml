@@ -15,7 +15,8 @@
         <activity android:name=".Home.Route.RouteActivity" />
         <activity android:name=".login_register.LoginActivity" />
         <activity android:name=".login_register.RegisterActivity" />
-        <activity android:name=".Home.MainActivity">
+        <activity android:name=".Home.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
