@@ -1,7 +1,5 @@
 package com.example.hello.Network;
 
-import android.content.Context;
-
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -20,6 +18,16 @@ public class Api {
     public static <S> S createService(Class<S> serviceClass) {
         return retrofit.create(serviceClass);
 
+    }
+
+    public static void changeApiBaseUrl(String url){
+        BASE_URL = url;
+        builder =
+                new Retrofit.Builder()
+                        .baseUrl(BASE_URL)
+                        .addConverterFactory(GsonConverterFactory.create())
+                        .client(httpClient.build());
+        retrofit = builder.build();
     }
 
 }
