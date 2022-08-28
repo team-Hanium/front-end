@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     package="com.example.hello">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
-    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application>
-       <meta-data android:name="com.kakao.sdk.AppKey" android:value="d93c80527f079de0c534ed2f2f27e4ae"/>
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Hello">
+        <activity android:name=".Home.FragmentActivity"
+            android:theme="@style/Theme.Hello"
+            android:exported="true"></activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="d93c80527f079de0c534ed2f2f27e4ae" />
+
         <activity
             android:name=".Home.MainActivity"
             android:exported="false" />
@@ -23,7 +23,8 @@
         <activity android:name=".login_register.RegisterActivity" />
         <activity
             android:name=".Home.HomeActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Hello">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
